@@ -26,13 +26,12 @@ fun main(args: Array<String>){
 
 
 
-
 	// クラス
 	class Dog2() {
 
 		// プロパティ定義
-		lateinit var name: String
-		lateinit var age: Int
+		var name: String = ""
+		var age: Int = 0
 
 		// initialize
 		init {
@@ -46,10 +45,11 @@ fun main(args: Array<String>){
 	}
 
 	// インスタンス作成
-	val dog2 = Dog2("pochi",10)
+	val dog2 = Dog2()
 
 	// プロパティ取得
-	println(dog2.name)
+	dog2.name = "john"
+	dog2.age = 10
 	println(dog2.age)
 
 	// ファンクション実行
